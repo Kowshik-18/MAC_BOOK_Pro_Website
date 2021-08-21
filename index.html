@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Mac_Book_Kinbo</title>
+</head>
+
+<body>
+    <main class="d-flex flex-row container mt-5">
+
+        <!-- right part  -->
+        <section>
+            <div class="img-fluid">
+                <img class="main-img" src="images/mac.png" alt="">
+            </div>
+        </section>
+
+        <!-- left part  -->
+        <section class="d-flex flex-column ms-5">
+            <article class="mb-5">
+                <h1>Customize Your Blue 24-Inch iMac With Apple M1 Chip</h1>
+                <p>
+                    Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                    16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
+                    Magic Keyboard US English
+                </p>
+            </article>
+
+            <article class="mb-5">
+                <p class="fw-bold">Memory</p>
+                <button type="button" class="btn btn-outline-success" id="memory-8GB">8GB unified memory</button>
+                <button type="button" class="btn btn-outline-success" id="memory-16GB">16GB unified memory</button>
+            </article>
+
+            <article class="mb-5">
+                <p class="fw-bold">Storage</p>
+                <button type="button" class="btn btn-outline-success" id="storage-256GB">256GB SSD storage</button>
+                <button type="button" class="btn btn-outline-success" id="storage-512GB">512GB SSD storage</button>
+                <button type="button" class="btn btn-outline-success" id="storage-1TB">1TB SSD storage</button>
+            </article>
+
+            <article class="mb-5">
+                <p class="fw-bold">Choose your delivery option</p>
+                <button type="button" class="btn btn-outline-success" id="delivery-free">Friday,Aug 25 FREE Prime
+                    Delivery</button>
+                <button type="button" class="btn btn-outline-success" id="delivery-pay">Friday,Aug 21 Delivery charge
+                    $20</button>
+            </article>
+
+            <!-- Pricing Part  -->
+
+            <article class="w-75">
+                <table class="table w-75 border-success mb-4">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Best Price</th>
+                            <td class="fw-bold">$<span>1299</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Extra Memory Cost</th>
+                            <td class="fw-bold">$<span id="extra-memory-cost">0</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Extra Storage Cost</th>
+                            <td class="fw-bold">$<span id="extra-storage-cost">0</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Delivery Charge</th>
+                            <td class="fw-bold">$<span id="delivery-charge">0</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total Price</th>
+                            <td class="fw-bold">$<span class="total-price">1299</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <!-- Promo Code part  -->
+                <h6>Add Promo Code</h6>
+                <div class="input-group mb-3 w-75">
+                    <input type="text" class="form-control" id="input-promo">
+                    <button class="btn btn-danger" type="button" id="apply-button">Apply</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <hr>
+    <footer class="text-center">
+        <h1>Total: $<span class="total-price">1299</span></h1>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
