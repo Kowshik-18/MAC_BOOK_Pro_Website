@@ -6,7 +6,7 @@ function buttonProcedure(id_button, id_display, number){
     document.getElementById(id_button).addEventListener('click', ()=> {
         document.getElementById(id_display).innerText = number;
         totalCalculation();
-        
+
         document.getElementById('apply-button').disabled = false;
 
         document.getElementById('invalid-promo').style.display = 'none';
@@ -48,6 +48,8 @@ document.getElementById('apply-button').addEventListener('click', ()=>{
         const mainPrice = totalCalculation() - totalCalculation() * 0.2;
 
         document.getElementById('apply-button').disabled = true;
+
+        document.getElementById('invalid-promo').style.display = 'none';
 
         updateTotalPrice('total-price', mainPrice);
       }
