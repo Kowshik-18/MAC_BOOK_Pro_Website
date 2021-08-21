@@ -6,7 +6,10 @@ function buttonProcedure(id_button, id_display, number){
     document.getElementById(id_button).addEventListener('click', ()=> {
         document.getElementById(id_display).innerText = number;
         totalCalculation();
+        
         document.getElementById('apply-button').disabled = false;
+
+        document.getElementById('invalid-promo').style.display = 'none';
      });
 }
 
@@ -47,6 +50,9 @@ document.getElementById('apply-button').addEventListener('click', ()=>{
         document.getElementById('apply-button').disabled = true;
 
         updateTotalPrice('total-price', mainPrice);
+      }
+      else{
+          document.getElementById('invalid-promo').style.display = 'block';
       }
 
       inputPromo.value = '';
