@@ -1,6 +1,6 @@
 
 
-
+// all buttons clicking function 
 
 function buttonProcedure(id_button, id_display, number){
     document.getElementById(id_button).addEventListener('click', ()=> {
@@ -10,11 +10,10 @@ function buttonProcedure(id_button, id_display, number){
      });
 }
 
-
-
+// total calculation function
 
 function totalCalculation(){
-    // debugger;
+
     const memoryCost = document.getElementById('extra-memory-cost').innerText;
     const storageCost = document.getElementById     ('extra-storage-cost').innerText;
     const deliveryCharge = document.getElementById     ('delivery-charge').innerText;
@@ -27,6 +26,8 @@ function totalCalculation(){
 }
 
 
+// display update function 
+
 function updateTotalPrice(id_totalprice, num){
     const totalUpdates = document.getElementsByClassName(id_totalprice);
     for(const totalUpdate of totalUpdates){
@@ -34,6 +35,8 @@ function updateTotalPrice(id_totalprice, num){
     }
 }
 
+
+//apply button function
 
 document.getElementById('apply-button').addEventListener('click', ()=>{
       const inputPromo = document.getElementById('input-promo');
@@ -50,7 +53,7 @@ document.getElementById('apply-button').addEventListener('click', ()=>{
 });
 
 
-
+// declaration for all buttons 
 
 buttonProcedure('memory-8GB', 'extra-memory-cost', 0);
 buttonProcedure('memory-16GB', 'extra-memory-cost', 180);
