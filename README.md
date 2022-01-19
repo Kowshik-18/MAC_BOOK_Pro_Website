@@ -1,1 +1,2 @@
-# mac-book-pro-Kowshik-18
+# MAC_BOOK_PRO
+First JavaScript Learning
